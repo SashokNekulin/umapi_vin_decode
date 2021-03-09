@@ -1,4 +1,4 @@
-const MANUFACTURERS = require('./data/manufacturers.json')
+const MANUFACTURERS = require('./data/manufacturers')
 const REGIONS = require('./data/regions.json')
 const YEARS = require('./data/years.json')
 
