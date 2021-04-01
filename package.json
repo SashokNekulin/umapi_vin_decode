@@ -1,18 +1,7 @@
 {
   "name": "umapi_vin_decode",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Декодировать вин код автомобиля",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "node ./test/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SashokNekulin/umapi_vin_decode.git"
-  },
   "keywords": [
     "vin",
     "vis",
@@ -24,12 +13,30 @@
     "car",
     "node",
     "js",
-    "js"
+    "TypeScript",
+    "TS"
   ],
+  "main": "src/index.js",
+  "typings": "src/index.d.ts",
+  "directories": {
+    "test": "src/test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --w",
+    "test": "node src/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashokNekulin/umapi_vin_decode.git"
+  },
   "author": "Alexandr Nikulin <nekulin@mail.ru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SashokNekulin/umapi_vin_decode/issues"
   },
-  "homepage": "https://github.com/SashokNekulin/umapi_vin_decode#readme"
+  "homepage": "https://github.com/SashokNekulin/umapi_vin_decode#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
 }

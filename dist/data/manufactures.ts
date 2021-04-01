@@ -1,4 +1,4 @@
-module.exports = {
+const manuf: { [key: string]: string } = {
     "AAV": "Volkswagen",
     "AC5": "Hyundai",
     "ADD": "Hyundai",
@@ -1379,3 +1379,5 @@ module.exports = {
     "X89": 'Little xUSSR factories',
     "Y39": 'Little xUSSR factories'
 }
+
+export default manuf

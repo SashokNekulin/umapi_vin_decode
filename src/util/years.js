@@ -1,4 +1,6 @@
-{
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var years = {
     "1980": "A",
     "1981": "B",
     "1982": "C",
@@ -50,4 +52,6 @@
     "2028": "W",
     "2029": "X",
     "2030": "Y"
-}
+};
+exports.default = years;
+//# sourceMappingURL=years.js.map

@@ -1,4 +1,6 @@
-{
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var regions = {
     "A": {
         "region": "Africa",
         "countries": {
@@ -240,4 +242,6 @@
             "3456789": "Brazil"
         }
     }
-}
+};
+exports.default = regions;
+//# sourceMappingURL=regions.js.map

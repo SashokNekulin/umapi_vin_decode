@@ -17,14 +17,19 @@ Nodejs модуль для декодирования вин кода автом
 npm install umapi_vin_decode
 ```
 
+## Тест
+```
+npm run test
+```
+
 ## Использование
 
 Подключение:
 ```js
-var UMAPI_VIN_DECODE = require('umapi_vin_decode')
+var UmapiVinDecode = require('umapi_vin_decode').default
 
 try {
-    var vin = new UMAPI_VIN_DECODE('your_vin_code')
+    var vin = new UmapiVinDecode('your_vin_code')
     console.log( vin.getDecodeVin() )
 } catch (error) {
     console.log( error.message )
@@ -34,11 +39,6 @@ try {
 ### Получить информацию по VIN:
 ```js
 console.log( vin.getDecodeVin() )
-```
-
-### Получить VIN:
-```js
-console.log( vin.getVin() )
 ```
 
 ### Получить WMI:
@@ -56,15 +56,15 @@ console.log( vin.getVds() )
 console.log( vin.getVis() )
 ```
 
-### Список производителей:
+### Производитель:
 ```js
 console.log( vin.identifyManufacturer() )
 ```
-### Список регионов:
+### Регион:
 ```js
 console.log( vin.identifyCountry() )
 ```
-### Список годов выпуска:
+### Год выпуска:
 ```js
 console.log( vin.identifyModelYear() )
 ```
